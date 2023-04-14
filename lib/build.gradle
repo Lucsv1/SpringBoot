@@ -19,10 +19,9 @@ repositories {
 }
 
 dependencies {	
-    // Use JUnit Jupiter for testing.    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
-    
-   implementation ''
-   implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.0.4'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.0.3'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.0.3'
+    runtimeOnly group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '21.9.0.0'
   
 }
 
