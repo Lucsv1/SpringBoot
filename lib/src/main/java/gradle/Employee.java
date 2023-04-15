@@ -6,4 +6,14 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Object getName() {
+		
+		return "Lucas";
+	}
+
+	public Object getRole() {
+		// TODO Auto-generated method stub
+		return "Vincius";
+	}
+
 }

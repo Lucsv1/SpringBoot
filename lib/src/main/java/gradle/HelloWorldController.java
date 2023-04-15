@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
+	
+	Employee emp = new Employee("Lucas vinicius ", "21/01/2004");
 
-	@GetMapping("/hello")
-	public ResponseEntity<String> getHelloWorld(){
-		return ResponseEntity.ok("hello world");
+	@GetMapping("/employess")
+	public ResponseEntity<Employee> getHelloWorld(){
+		return ResponseEntity.ok(emp);
 	}
 }

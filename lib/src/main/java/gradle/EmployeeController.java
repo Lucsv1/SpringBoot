@@ -1,4 +1,4 @@
-package restControler;
+package gradle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,10 +31,7 @@ public class EmployeeController {
     @GetMapping("/employees")
     ResponseEntity<List<Employee>> all() {
       return ResponseEntity.ok(employeeList);
-    }
-   
-    
-    
+    }   
     
 	  @PostMapping("/employees")
 	  public ResponseEntity<Employee> newEmployee(@RequestBody Employee newEmployee) {
